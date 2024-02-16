@@ -384,7 +384,7 @@ hr {
     .left {
         margin-left: 1rem;
         margin-right: 1rem;
-        padding: 2rem;
+        padding: 1.5rem;
         top: 0;
         margin-top: 3rem;
     }
@@ -443,5 +443,23 @@ hr {
     .project-skills {
         font-size: 15px;
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .socials-div {
+        margin-top: 1.5rem;
+    }
+
+    .contactme {
+        padding: 0.2rem;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .social {
+        width: 13px;
+        padding: 0.2rem 1.2rem;
+        margin-right: 0.4rem;
     }
 }
