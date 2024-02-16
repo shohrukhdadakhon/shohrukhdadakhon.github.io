@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-content">
+                <img src="images/chad.png" alt="Profile Photo" class="profile-photo">
+                <div class="text-container">
+                    <span class="title">Shohrukh Dadakhon Khasan</span>
+                    <div class="job">
+                        <span class="icon">💻</span><span class="job-title">Full Stack Developer</span>
+                    </div>
+                    <div class="job">
+                        <span class="icon">🤖</span><span class="job-title">Mechatronics Engineer (Soon)</span>
+                    </div>
+                    <div class="socials-div">
+                        <img src="images/linkedin.png" alt="Linkedin" class="social" id="linkedin-link">
+                        <img src="images/x.png" alt="Twitter" class="social" id="x-link">
+                        <button class="contactme" id="contact-me">Contact Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <span class="projects-div-title">Projects</span>
+            <div class="project-div" id="project1">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Web Connected Remote 3D Printer</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>We are developing a web-connected and remotely controlled FDM 3D printer as our final year
+                            project with a team of three members. My role primarily focuses on software and algorithm
+                            design, encompassing the development of a web application, integration of slicing
+                            mechanisms, communication protocols, automatic print failure detection system, and firmware
+                            integration.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>HTML, CSS, JS, jQuery, Express, Node.js, Python, IoT, Mechatronics, 3D Printer, Project
+                            Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project2">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Automatic Print Failure Detection System with Multimodal LLMs</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>I'm bulding an automatic print failure detection system utilizing Google Gemini Pro
+                            (1.0)
+                            Vision and Microsoft Kosmos-2 Multimodal LLMs. Configured a Google Compute Engine Virtual
+                            Machine to execute the models.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Multimodal LLM, Large Language Model, Google Gemini, Google Compute Engine, Virtual
+                            Machine (VM), Python, 3D Printer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project3">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Automatic UAV Collision Avoidance and Warning System - Lagari UAV Team</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>Worked on an automated collision avoidance mechanism for the Lagari UAV Team. This
+                            system was simulated using the Mission Planner ground control station. Additionally, I
+                            designed and implemented a warning graphical user interface (GUI) within Mission Planner for
+                            the operator.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Unmanned Aerial Vehicle (UAV), C#, Mission Planner, Graphical User Interface (GUI)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project4">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Anti-Lock Mechanism for UAV Evasion - Lagari UAV Team</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>Worked on an anti-lock mechanism for our UAV to evade detection and lock-on by other UAVs
+                            during the Fighter UAV Competition - Teknofest 2021</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Unmanned Aerial Vehicle (UAV), C#, Mission Planner</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project5">
+                <div class="project-info">
+                    <div class="project">
+                        <span>PLC Based Automated Warehouse Management System</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>We developed an automatic warehouse management system consisting of conveyor, elevator,
+                            and various sensors with our team of three using FPWIN Pro PLC programming tool.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Programmable Logic Controller (PLC), FPWIN Pro, Industrial Automation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project6">
+                <div class="project-info">
+                    <div class="project">
+                        <span>GUI for Measuring Objects in the Image via Single View Metrology</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>Developed an obect size measurement tool and a GUI.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Image Processing, Graphical User Interface (GUI), PyQt5, Python, OpenCV</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project7">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Kargoportal.com</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>I developed a web application that helps users compare options among different cargo
+                            companies, enabling them to find the best price and reviews for a specific
+                            destination.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Full Stack Development, Web Application, HTML, CSS, JS, jQuery, Express, Node.js, MongoDB,
+                            Startup, Entrepreneurship</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project8">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Light Following Robot - Intro to Mechatronics</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>As part of my introduction to mechatronics engineering course, my partner and I
+                            constructed a light-following robot capable of directing a laser towards a light
+                            source.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>C++, Arduino, Servo Motor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-div" id="project9">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Checklist Application - Lagari UAV Team</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span>Developed a checklist application using the Java programming language to facilitate and
+                            enhance the ease and reliability of pre-flight inspection procedures.</span>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Java, Mobile Application</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="video-container" class="modal-content">
+            <!-- Video will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            const xLink = $('#x-link');
+            const linkedinLink = $('#linkedin-link');
+            const contactMe = $('#contact-me');
+
+            var isDragging = false;
+
+            xLink.click(function () {
+                window.open('https://twitter.com/shohrukhDKH', '_blank');
+            });
+
+            linkedinLink.click(function () {
+                window.open('https://www.linkedin.com/in/shohrukh-dadakhon-khasan/', '_blank');
+            });
+
+            contactMe.click(function () {
+                // Define your email address
+                const emailAddress = 'shohrukh.khasan@gmail.com';
+
+                // Open default email client with pre-filled email address
+                window.location.href = 'mailto:' + emailAddress;
+            });
+
+            var imagePaths = {
+                project1: 'images/print.png',
+                project2: 'images/detection.png',
+                project5: 'images/plc.jpg'
+            };
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            var videoContainer = document.getElementById('video-container');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var projectDiv = $('.project-div');
+            var modalImg = $("#img01");
+
+            projectDiv.click(function () {
+                // Get the id of the clicked projectDiv
+                var projectId = $(this).attr('id');
+
+                // Check if the clicked project is project3
+                if (projectId === 'project3' || projectId === 'project4') {
+                    // Open a new tab with the specified link
+                    window.open('https://github.com/shohrukhdadakhon/Lagari-Fighter-UAV-Competition-Obstacle-Avoidance-and-Anti-Lock-Mechanism', '_blank');
+                } else if (projectId === 'project6') {
+                    // Open a new tab with the specified link
+                    window.open('https://github.com/shohrukhdadakhon/GUI-for-Measuring-Objects-in-the-Image', '_blank');
+                } else if (projectId === 'project7') {
+                    window.open('https://www.kargoportal.com', '_blank');
+                } else if (projectId === 'project9') {
+                    window.open('https://github.com/shohrukhdadakhon/checklist-android-app', '_blank');
+                }
+                else if (projectId === 'project8') {
+                    // Display a video instead of an image in the modal
+                    modalImg.attr("src", '');
+                    modal.style.display = 'block';
+                    videoContainer.innerHTML = '<video controls><source src="videos/robot.mp4" type="video/mp4"></video>';
+                } else {
+                    // Display the modal with the image 
+                    videoContainer.innerHTML = ''; // Empty the video container
+                    modal.style.display = 'block';
+                    modalImg.attr("src", imagePaths[projectId]);
+                }
+            });
+
+
+            // Get the <span> element that closes the modal
+            var span = $(".close");
+
+            // When the user clicks on <span> (x), close the modal
+            span.click(function () {
+                modal.style.display = 'none';
+                videoContainer.innerHTML = ''; // Empty the video container
+            });
+
+            modal.addEventListener('mousedown', function () {
+                isDragging = false;
+            });
+
+            modal.addEventListener('mousemove', function () {
+                isDragging = true;
+            });
+
+            modal.addEventListener('mouseup', function (e) {
+                if (!isDragging && e.target == modal) {
+                    modal.style.display = 'none';
+                }
+                isDragging = false;
+            });
+
+            window.addEventListener('mouseup', function () {
+                isDragging = false;
+            });
+
+            $(window).on('click', function (e) {
+                if (e.target == modal && isDragging) {
+                    modal.style.display = 'none';
+                    videoContainer.innerHTML = ''; // Empty the video container
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
