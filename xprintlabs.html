@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>X Print Labs</title>
+</head>
+
+<body>
+    <div class="container project-detail">
+        <div>
+            <span>
+                <a href="index.html" class="back-button">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                    <span class="back-text">Back</span>
+                </a>
+            </span>
+
+            <span class="projects-div-title">X Print Labs</span>
+            <div class="project-div" id="project1">
+                <div class="project-info">
+                    <div class="project">
+                        <span>X Print Labs - Web Connected Remote Controlled FDM 3D Printer</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span style="font-weight: 600;">
+                            Website: <span style="text-decoration: underline;"><a
+                                    href="https://xprintlabs.com">xprintlabs.com</a></span>
+                        </span>
+                        <br>
+                        <span>
+                            <span style="font-weight: 600;">Team: </span>Shohrukh Dadakhon Khasan, Abdulaziz Alnajjar,
+                            Mahmud Alam Nau
+                        </span>
+                        <br>
+                        <span>
+                            <span style="font-weight: 600;">Advisor: </span>Associate Professor Muhammet Garip
+                        </span>
+                        <br>
+                        <span>
+                            <span style="font-weight: 600;">Captain / Project Manager: </span>Shohrukh Dadakhon Khasan
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span style="font-weight: 700; text-decoration: underline;">What Is X Print Labs?</span>
+                        <br>
+                        <br>
+                        <span>At X Print Labs, we're making 3D printing easy and accessible for all students. Also this
+                            project is our Bachelor’s Thesis.
+                            <br>
+                            <br>
+                            Students can print their 3D parts from anywhere using our simple web application. They can
+                            customize their print settings easily to meet their specific needs.
+                            <br>
+                            <br>
+                            Students can also watch their projects being printed in real-time, no matter where they are.
+                            Our platform ensures that students can stay connected to their work from start to
+                            finish.</span>
+                        <br>
+                        <br>
+
+                        <span style="font-weight: 700; text-decoration: underline;">Milestones</span>
+
+                        <br><br>
+                        <span>
+                            <span style="font-weight: 600;">✅ March 2024: </span>Accepted to Tübitak 2209-A - Research
+                            Project Support Programme for
+                            Undergraduate Students.
+                            <br><br>
+                            <span style="font-weight: 600;">✅ June 2024: </span>At the semi-finals stage of Teknofest
+                            2024 Educational Technologies
+                            Competition.
+                            <br><br>
+                            <span style="font-weight: 600;">✅ June 2024: </span>We are the final stage of system
+                            integration for our Bachelor’s Thesis
+                            presentation.
+                        </span>
+                        <br><br>
+                        <span style="font-weight: 700; text-decoration: underline;">My Role</span>
+                        <br><br>
+                        <span>
+                            My role primarily focuses on software and algorithm design, encompassing the development of
+                            a web application, integration of slicing mechanisms, communication protocols, automatic
+                            print failure detection system, and firmware integration. Also I’m the captain and project
+                            manager of the team where I’m responsible for communications with sponsors, Tübitak and
+                            Teknofest.
+                        </span>
+
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>HTML, CSS, JS, jQuery, Express, Node.js, Python, IoT, Mechatronics, 3D Printer, Project
+                            Management</span>
+                    </div>
+                    <hr>
+                    <div class="slideshow-container">
+                        <div class="slides fade">
+                            <img src="images/project/xprintlabs-1.jpg" alt="Project Image 1">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/xprintlabs-2.jpg" alt="Project Image 2">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/xprintlabs-3.jpg" alt="Project Image 3">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/xprintlabs-4.jpg" alt="Project Image 4">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

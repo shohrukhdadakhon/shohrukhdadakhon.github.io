@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Pidief</title>
+</head>
+
+<body>
+    <div class="container project-detail">
+        <div>
+            <span>
+                <a href="index.html" class="back-button">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                    <span class="back-text">Back</span>
+                </a>
+            </span>
+
+            <span class="projects-div-title">Pidief</span>
+            <div class="project-div" id="project1">
+                <div class="project-info">
+                    <div class="project">
+                        <span>Pidief - Share or find lecture notes.</span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span style="font-weight: 600;">
+                            Website: <span style="text-decoration: underline;"><a
+                                    href="https://pidief.com">pidief.com</a></span>
+                        </span>
+                        <br>
+                        <span>
+                            <span style="font-weight: 600;">Solo Founder: </span>Shohrukh Dadakhon Khasan
+                        </span>
+                        <br>
+                        <span>
+                            <span style="font-weight: 600;">Users: </span>~1000 only from Yildiz Technical University
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="project-description">
+                        <span style="font-weight: 700; text-decoration: underline;">What Is Pidief?</span>
+                        <br>
+                        <br>
+                        <span>All my college years I had this problem of not being able to find lecture notes and sample
+                            questions to study for exams. Also all my friends faced the same problem.
+                            <br>
+                            <br>
+                            So I decided to build Pidief. Pidief is a course documents sharing platform for college
+                            students. Students can sign up using their university email address and start studying using
+                            the shared lecture notes by other students. Also they can share course documents themselves.
+                            <br>
+                            <br>
+                            Pidief also got accepted to Microsoft for Founders - Founders Hub where Microsoft provides infrastructure for Pidief.</span>
+                            <br><br>
+                            Check out our Demo: 
+                            <a href="https://vimeo.com/942160640?share=copy">Pidief Demo</a>
+                        <br>
+                        <br>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Full Stack Development, Web Application, HTML, CSS, JS, jQuery, Express, Node.js,
+                            MongoDB, Large Language Models, Retrieval Augmented Generation (RAG), Virtual Machines, Linux, UI/UX Design, Email Server, Database Management, GitHub, Server Security, AWS S3, Digital Ocean</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

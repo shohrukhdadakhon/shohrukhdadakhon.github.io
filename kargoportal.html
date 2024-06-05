@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Kargoportal</title>
+</head>
+
+<body>
+    <div class="container project-detail">
+        <div>
+            <span>
+                <a href="index.html" class="back-button">
+                    <span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span>
+                    <span class="back-text">Back</span>
+                </a>
+            </span>
+
+            <span class="projects-div-title">Kargoportal</span>
+            <div class="project-div" id="project1">
+                <div class="project-info">
+                    <div class="project-description">
+                        <span>I developed a web application that helps users compare options among different cargo
+                            companies, enabling them to find the best price and reviews for a specific
+                            destination.</span>
+                        <br>
+                    </div>
+                    <hr>
+                    <div class="project-skills">
+                        <span class="skills">Skills:</span>
+                        <span>Full Stack Development, Web Application, HTML, CSS, JS, jQuery, Express, Node.js, MongoDB</span>
+                    </div>
+                    <hr>
+                    <div class="slideshow-container">
+                        <div class="slides fade">
+                            <img src="images/project/kargoportal-1.JPG" alt="Project Image 1">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/kargoportal-2.JPG" alt="Project Image 2">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/kargoportal-3.JPG" alt="Project Image 2">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/kargoportal-4.JPG" alt="Project Image 2">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/kargoportal-5.JPG" alt="Project Image 2">
+                        </div>
+                        <div class="slides fade">
+                            <img src="images/project/kargoportal.gif" alt="Project Image 2">
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            if (n >= slides.length) {
+                slideIndex = 0;
+            }
+            if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
